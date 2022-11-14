@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/shop.css">
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HHT Shop</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="logo">hht shop</div>
+            <div class="nav">
+                <ul>
+                    <li><a class="menu-nav" href="index.html">Trang chủ</a></li>
+                    <li><a class="menu-nav active" href="#">Sản phẩm</a></li>
+                    <li><a class="menu-nav" href="about.html">Thông tin</a></li>
+                    <li><a class="menu-nav" href="contact.html">Liên lạc</a></li>
+                </ul>
+            </div>
+            <div class="box-icon">
+                <a href="Login.html"><i class='bx bxs-user-circle'></i><span>Login</span></a>
+                <a href="cart.html"><i class='bx bxs-cart'></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- SECTION -->
+    <section id="filter">
+
+        <h3 class="our">Sản phẩm</h3>
+        <div class="products-nav">
+            <div class="filter-search">
+                <h2 class="text-center mt-2">Tìm kiếm</h2>
+                <div class="form-input">
+                    <i class='bx bx-search-alt-2'></i>
+                    <input type="text" id="myinput" placeholder="tìm kiếm......">
+                </div>
+                <button class="btns" type="button" onclick="opbtn()"><p>Show search products</p></button>
+                <button class="btns" type="button" onclick="cbtn()"><p>Hide search products</p></button>
+                <div class="card" id="card">
+                </div>
+            </div>
+            <div class="filter-data" id="products">
+                 <div class="product">
+                    <img src="img/Nam/Khác/Khan2.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Khăn choàng heattech</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">391.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Khan3.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Khăn heattech đa năng</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">391.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Khan4.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Khăn heattech caro</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">489.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Khan5.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Khăn heattech</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">489.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Aosomi/Aosomi5.png" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Áo sơ mi vải nhung</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">784.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Aosomi/Aosomi6.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Áo Sơ Mi Vải Denim</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">686.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Aokhoac/Aokhoac6.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Áo khoác track</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">980.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Aothun/Aothun5.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Áo Thun Soft Touch</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">391.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Aothun/Aothun6.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Áo Thun Cổ Tròn</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">489.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Quandai/quandai5.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Quần Jean Skinny Fit</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">686.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Quandai/quandai6.png" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Quần Jeans Regular</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">1.275.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Quanshort/quanshort5.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Quần short thể thao</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">293.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Quanshort/quanshort6.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Quần short bơi thể thao</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">489.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Thatlung1.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Thắt Lưng Sọc Ngang</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">489.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div> 
+                <div class="product">
+                    <img src="img/Nam/Khác/Thatlung2.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Thắt Lưng Canvas</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">784.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Thatlung3.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Thắt Lưng Da Thuộc</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">980.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Thatlung4.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Thắt Lưng Dạng Lưới</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">784.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Thatlung5.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Thắt Lưng Bản Hẹp</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">784.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div> 
+                <div class="product">
+                    <img src="img/Nam/Khác/Mu5.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Mũ Len Gân HEATTECH</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">244.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                <div class="product">
+                    <img src="img/Nam/Khác/Mu6.jpg" alt="">
+                    <div class="infor">
+                        <h2 class="name_item">Mũ Bucket</h2>
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        <h3 class="price">489.000đ<a href="product/id1.html">Xem thêm</a></h3>
+                    </div>
+                    <div class="add"><a href="#">thêm vào giỏ hàng</a></div>
+                </div>
+                 <h1 id="showtext"></h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="pagination">
+        <a href="product-page2.html">&laquo;</a>
+        <a href="product.html">1</a>
+        <a href="product-page2.html">2</a>
+        <a href="#" class="active">3</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="f1">
+                    GỌI MUA HÀNG(8:30 - 17:00) <br>
+                    <a href="#"><i class='bx bxs-phone'>999 999 9999</i></a>
+                    <p>Tất cả các ngày trong tuần</p>
+                </div>
+                <div class="f2">
+                    GỌI MUA HÀNG(8:30 - 17:00) <br>
+                    <a href="#"><i class='bx bxs-phone'>999 999 9999</i></a>
+                    <p>Tất cả các ngày trong tuần</p>
+                </div>
+                <div class="f3">
+                    ĐĂNG KÍ NHẬN THÔNG TIN MỚI
+                    <form class="sub">
+                        <input type="number">
+                        <button>Đăng kí</button>
+                    </form>
+                </div>
+                <div class="f4">
+                    THEO DÕI CHÚNG TÔI<br>
+                    <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="footer-bottom">
+                    <div class="f5">
+                        HỖ TRỢ KHÁCH HÀNG
+                        <ul>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách đổi/trả</a></li>
+                            <li><a href="#">Hình thức thanh toán</a></li>
+                            <li><a href="#">Chính sách giao hàng</a></li>
+                            <li><a href="#">Thông tin bảo mật</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="f6">
+                        HỆ THỐNG CỬA HÀNG
+                        <p>HHT Shop
+                        <br> Địa chỉ: Chung Cư Đông Hải, Tô Ký, Tân Chánh Hiệp, Quận 12
+                        <br> Phone : 033 892 7972</p>
+                    </div>
+                    <div class="f7">
+                        VỀ CHÚNG TÔI
+                        <p>Với hơn 20 cửa hàng trải dài cả nước, HHT SHOP hy vọng sẽ mang đến sự phục vụ chu đáo cho tất cả các khách hàng. 
+                            Hệ thống cửa hàng thời trang HHT luôn luôn lắng nghe những ý kiến đóng góp từ các khách hàng với mục tiêu đẩy mạnh dịch vụ, 
+                            mở rộng hệ thống và làm hài lòng những vị khách đến trên toàn quốc.
+                        </p>
+                    </div>
+                    <div class="f8">
+                        FANPAGE CHÚNG TÔI
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="shop.js"></script>
+</body>
+</html>

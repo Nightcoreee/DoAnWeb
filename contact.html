@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/contact.css">
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>HHT Shop</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="logo">hht shop</div>
+            <div class="nav">
+                <ul>
+                    <li><a class="menu-nav" href="index.html">Trang chủ</a></li>
+                    <li><a class="menu-nav" href="product.html">Sản phẩm</a></li>
+                    <li><a class="menu-nav" href="about.html">Thông tin</a></li>
+                    <li><a class="menu-nav active" href="#">Liên lạc</a></li>
+                </ul>
+            </div>
+            <div class="box-icon">
+                <a href="Login.html"><i class='bx bxs-user-circle'></i><span>Login</span></a>
+                <a href="cart.html"><i class='bx bxs-cart'></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h1>Liên hệ</h1>
+        <div class="container">
+            <div>
+                <br> Nếu không liên lạc được vui lòng liên hệ với chúng tôi qua<br>
+                <div class="contact-logo">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+            <form class="contact" onsubmit="sendEmail(); reset(); return false;">
+                <p style="font-size:1.2rem;">Họ và Tên</p>
+                <input type="text" class="inpt" id="name" placeholder="Nhập Họ và Tên" required>
+                <p style="font-size:1.2rem;">Email</p>
+                <input type="email" class="inpt" id="email" placeholder="Nhập Email" required>
+                <p style="font-size:1.2rem;">Lời nhắn</p>
+                <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit" class="send">Gửi</button>
+            </form>
+            <div>
+                <p> <br> <span style="font-size: 1.5rem;">Địa chỉ</span> <br> 273 An D. Vương, Phường 3, Quận 5, Thành phố Hồ Chí Minh</p>
+                <p><span style="font-size: 1.5rem;">Đường dây nóng</span><br> 123-456-7890</p>     
+                <p><span style="font-size: 1.5rem;">EMAIL</span> <br> info@mysite.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="f1">
+                    GỌI MUA HÀNG(8:30 - 17:00) <br>
+                    <a href="#"><i class='bx bxs-phone'>999 999 9999</i></a>
+                    <p>Tất cả các ngày trong tuần</p>
+                </div>
+                <div class="f2">
+                    GỌI MUA HÀNG(8:30 - 17:00) <br>
+                    <a href="#"><i class='bx bxs-phone'>999 999 9999</i></a>
+                    <p>Tất cả các ngày trong tuần</p>
+                </div>
+                <div class="f3">
+                    ĐĂNG KÍ NHẬN THÔNG TIN MỚI
+                    <form class="sub">
+                        <input type="number">
+                        <button>Đăng kí</button>
+                    </form>
+                </div>
+                <div class="f4">
+                    THEO DÕI CHÚNG TÔI<br>
+                    <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="footer-bottom">
+                    <div class="f5">
+                        HỖ TRỢ KHÁCH HÀNG
+                        <ul>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách đổi/trả</a></li>
+                            <li><a href="#">Hình thức thanh toán</a></li>
+                            <li><a href="#">Chính sách giao hàng</a></li>
+                            <li><a href="#">Thông tin bảo mật</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="f6">
+                        HỆ THỐNG CỬA HÀNG
+                        <p>HHT Shop
+                        <br> Địa chỉ: Chung Cư Đông Hải, Tô Ký, Tân Chánh Hiệp, Quận 12
+                        <br> Phone : 033 892 7972</p>
+                    </div>
+                    <div class="f7">
+                        VỀ CHÚNG TÔI
+                        <p>Với hơn 20 cửa hàng trải dài cả nước, HHT SHOP hy vọng sẽ mang đến sự phục vụ chu đáo cho tất cả các khách hàng. 
+                            Hệ thống cửa hàng thời trang HHT luôn luôn lắng nghe những ý kiến đóng góp từ các khách hàng với mục tiêu đẩy mạnh dịch vụ, 
+                            mở rộng hệ thống và làm hài lòng những vị khách đến trên toàn quốc.
+                        </p>
+                    </div>
+                    <div class="f8">
+                        FANPAGE CHÚNG TÔI
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "hhtshop1234@gmail.com",
+                Password : "D83DB96489D50AF823235C967A46A873F545",
+                To : 'hhtshop1234@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+                }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>
